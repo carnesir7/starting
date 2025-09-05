@@ -9,7 +9,7 @@
 <body>
         <nav>
             <ul class="nav-buttons">
-                <li class="home-left"><a href="#design">Design System</a></li>
+                    <li class="home-left"><a href="#design">Design System</a></li>
                 <div class="home-right">
                     <li><a href="#typography">Typography</a></li>
                     <li><a href="#colors">Colors</a></li>
@@ -56,7 +56,7 @@
     
 
     <section id="typography" class="hidden">
-        <h2>Typography</h2>
+            <h2 class="typography1">Typography</h2>
             <ul>
                 <li class="heading1-4">
                     <h2>Headings</h2>
@@ -86,18 +86,18 @@
                     </p>
                 </li>
 
-            <ul class="font-information">
-                <li class="font-information1">
+            <div class="font-information">
+                <h2>Font Information</h2>
+                <div class="font-information1">
                     <h2>
-                        Font Information<br><br>
                         Font Family<br>
                         System Font Stack<br>
                     </h2>
                      <p>
                         -apple-system, BlinkMacSystemFont, Segoe UI, Roboto
                      </p>
-                </li>
-                <li class="font-information2">
+                </div>
+                <div class="font-information2">
                     <h2>
                         Base Font Size<br>
                         14px
@@ -105,8 +105,8 @@
                     <p>
                      Optimized for readability
                     </p>
-                </li>
-                <li class="font-information3">
+                </div>
+                <div class="font-information3">
                     <h2>
                         Line Height<br>
                         1.5
@@ -114,8 +114,8 @@
                     <p>
                         Consistent across all elements
                     </p>
-                </li>
-            </ul>
+                </div>
+            </div>
     </section>
 
     <section id="colors" class="hidden">
@@ -253,6 +253,65 @@
                     • Don't override color tokens without good reason
                 </li>
             </ul>
+    </section>
+    <section id="buttons" class="hidden">
+        <h2>Buttons</h2>
+            <div class="box-button">
+                <div class="pri-button">
+                <h2>Button Variants</h2>
+                <h2>Primary Button</h2>
+                    <button class="box-s black">Primary action</button>
+                    <button class="box-s Slate-Gray">Disabled Primary</button>
+                    <p>Used for the main action in a section. Bold, filled with primary color.</p>
+                </div>
+                <div class="center-button">
+                <h2>Secondary Button</h2>
+                    <button class="box-s off-white">Secondaty Action</button>
+                    <button class="box-s Light-Gray">Disabled Secondary</button>
+                    <p>Used for alternative actions. Outlined with subtle background.</p>
+                </div>
+                <div class="right-button">
+                <h2>Outline Button</h2>
+                    <button class="box-s white active">Outline Active</button>
+                    <button class="box-s white">Disabled Outline</button>
+                    <p>Used for tertiary actions. Outlined with transparent background.</p>
+                </div>
+            </div>
+            <div class="box-button">
+                <div class="pri-button">
+                <h2>Additional Variants</h2>
+                <h2>Ghost Button</h2>
+                    <button class="box-s white active ghost">Ghost Action</button>
+                    <button class="box-s white ghost">Disabled Ghost</button>
+                    <p>Minimal styling for subtle actions.</p>
+                </div>
+                <div class="center-button">
+                <h2>Destructive Button</h2>
+                    <button class="box-s Red destructive">Delete Action</button>
+                    <button class="box-s Red destructive">Disabled Delete</button>
+                    <p>Used for dangerous actions like delete.</p>
+                </div>
+                <div class="right-button">
+                <h2>Link Button</h2>
+                    <button class="box-s white action">Link Active</button>
+                    <button class="box-s white">Disabled Link</button>
+                    <p>Styled like a text link.</p>
+                </div>
+            </div>
+            
+            <div class="button-s">
+                <h2>Button Sizes</h2>
+                <div>
+                    <button class="s-button"></button>
+                    <button class="d-button"></button>
+                    <button class="l-button"></button>
+                </div>
+                <div>
+                    <p>Small: For compact interfaces</p>
+                    <p>Default: Standard size for most use cases</p>
+                    <p>Large: For emphasis and mobile interfaces</p>
+                </div>
+            </div>
     </section>
 
     <footer>
