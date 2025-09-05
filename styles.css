@@ -279,13 +279,110 @@ footer {
     text-align: left;
     box-sizing: border-box; 
     padding-left:  20px;
+
+    p {
+        display: inline;
+        margin-left: 100px;
+    }
+    
+}
+
+.sdl-button {
+    display: flex;
 }
 
 .s-button,
 .d-button,
 .l-button {
-    padding: 20px 10px;
+    display: flex;
+    vertical-align: text-top;
+    margin: 20px 10px;
+
 }
+
+.s-button {
+    border: 1 solid gray;
+    border-radius: 10px;
+    width: 95px;
+    height: 28px;
+    padding: 0px 10.5px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.d-button {
+    border: 1 solid gray;
+    border-radius: 10px;
+    width: 114px;
+    height: 32px;
+    padding: 7px 14px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.l-button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 118px;
+    height: 35px;
+    padding: 0px 21px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.guidelines {
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 1100px;
+    height: 235px;
+    margin: 20px auto;
+    display: flex;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.hierarchy {
+    margin: 0 auto;
+}
+
+.button-a {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 66px;
+    height: 28px;
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+
+}
+
+.button-b {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 84px;
+    height: 28px;
+    padding: 0px 10px;
+}
+
+.input-field {
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 1100px;
+    height: 265px;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 450px;
+    height: 30px;
+}
+
 
 
 
