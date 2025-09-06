@@ -339,20 +339,111 @@
     <section id="forms" class="hidden">
         <h2>Form Elements</h2>
         <div class="input-field">
-            
-            <div>
+            <div class="data">
                 <h2>Input Fields</h2>
-                <form action="">
+                <form>
                     <label for="email">Email Address</label><br>
                     <input id="email" type="email" placeholder="Enter your email"><br>
                     <label for="password">Password</label><br>
                     <input id="password" type="password" placeholder="Enter your password"><br>
                     <label for="disabled">Disabled Input</label><br>
-                    <input id="disabled" placeholder="This input is disabled">
+                    <input id="disabled" placeholder="This input is disabled" disabled>
+                </form>
+            </div>
+            <div class="data2">
+                <form>
+                    <label for="search">Search</label><br>
+                    <input id="search" type="search" placeholder="Search..."><br>
+                    <label for="number">Number Input</label><br>
+                    <input id="number" type="number" placeholder="Enter a number"><br>
+                    <label for="date">Date Input</label><br>
+                    <input id="date" type="date"  placeholder="This input is disabled">
                 </form>
             </div>
         </div>
-
+        <div class="input-2">
+            <div class="data3">
+                <h2>Textarea</h2>
+                <form>
+                    <label for="message">Message</label><br>
+                    <input id="message" type="textbox" placeholder="Type your message here...">
+                </form>
+            </div>
+            <div class="data4">
+                <form>
+                    <label for="comments">Comments (Disabled)</label><br>
+                    <input id="comments" type="textbox" placeholder="Comments are disabled">
+                </form>
+            </div>
+        </div>
+        <div class="input-2">
+            <div class="data5">
+                <h2>Select Dropdown</h2>
+                <form>
+                    <label for="country">Country</label><br>
+                    <select id="country" name="country">
+                        <option value="" disabled selected hidden>Select a country</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="united states">United states</option>
+                        <option value="united kingdom">United Kingdom</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                </form>
+            </div>
+            <div class="data6">
+                <form>
+                    <label for="categoty">Categoty</label><br>
+                    <select id="categoty" name="categoty">
+                        <option value="" disabled>Choose a category</option>
+                        <option value="design">Design</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="sales">Sales</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="input-3">
+            <div class="data7">
+                <h2>Checkboxes & Radio Buttons</h2>
+                <h2>Checkboxes</h2>
+                <form>
+                    <ul>
+                        <li>
+                        <input type="checkbox" id="accept">
+                        <label for="accept">Accept terms and conditions</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="subscribe">
+                        <label for="subscribe">Subscribe to newsletter</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="disabled" disabled>
+                        <label for="disabled">Disabled option</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="data8">
+                <h2>Radio Buttons</h2>
+                <form>
+                    <ul>
+                        <li>
+                        <input type="radio" id="option1" name="choices">
+                        <label for="option1">option1</label>
+                        </li>
+                        <li>
+                        <input type="radio" id="option2" name="choices">
+                        <label for="option2">option2</label>
+                        </li>
+                        <li>
+                        <input type="radio" id="option3" name="choices">
+                        <label for="option3">option3</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
