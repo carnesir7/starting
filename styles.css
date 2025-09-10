@@ -97,6 +97,7 @@ aside {
     width: 1100px;
     margin: 0 auto;
     text-align: left;
+    box-sizing: border-box;
 
     h2 {
         text-align: center;
@@ -119,6 +120,12 @@ footer {
     margin: 50px auto;
     box-sizing: border-box;
     padding-left: 20px;
+    text-align: center;
+}
+
+#typography .typography1 {
+    text-align: center;
+    margin: 40px auto;
 }
 
 .heading1-4,
@@ -352,14 +359,16 @@ footer {
     padding-left: 20px;
     box-sizing: border-box;
 
-    .usage {
-        display: grid;
+    .guidelines1 {
+        display: flex;
+
+        div {
+            width: 500px;
+        }
+        
     }
 
-    .hierarchy {
-        display: inline;
-        justify-content: left;
-    }
+    
 
     
 
