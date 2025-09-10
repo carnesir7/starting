@@ -7,18 +7,20 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <ul class="nav-buttons">
-                    <li class="home-left"><a href="#design">Design System</a></li>
-                <div class="home-right">
+    <nav>
+        <div class="nav-buttons">
+            <span class="menu-right"><a href="#design">Design System</a></span>
+            <div class="menu-left">
+                <ul class="nav-link">
                     <li><a href="#typography">Typography</a></li>
                     <li><a href="#colors">Colors</a></li>
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="#forms">Forms</a></li>
-                    <li><a href="#layout">Layout</a></li>
-                </div>
-            </ul>
-        </nav>
+                    <li><a href="#layout">Layout</a></li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <article>
         <div id="design">
@@ -255,7 +257,7 @@
             </ul>
     </section>
     <section id="buttons" class="hidden">
-        <h2>Buttons</h2>
+            <h2>Buttons</h2>
             <div class="box-button">
                 <div class="pri-button">
                 <h2>Button Variants</h2>
@@ -314,8 +316,9 @@
             </div>
 
             <div class="guidelines">
-                <div class="usage">
                 <h2>Button Usage Guidelines</h2>
+                <div class="guidelines1">
+                    <div>
                         <h2>Best Practices</h2>
                         <ul>
                             <li>Use only one primary button per section</li>
@@ -324,16 +327,16 @@
                             <li>Use appropriate sizes for the context</li>
                             <li>Consider touch targets for mobile devices</li>
                         </ul>
+                    </div>
+                    <div>
+                        <h2>Button Hierarchy</h2>
+                        <button class="button-a">Primary</button>
+                        <button class="button-b">Secondary</button>
+                        <p>Example: Primary action with secondary alternative</p>
+                    </div>
                 </div>
-                <div class="hierarchy">
-                      <h2>Button Hierarchy</h2>
-                      <button class="button-a">Primary</button>
-                      <button class="button-b">Secondary</button>
-                     <p>Example: Primary action with secondary alternative</p>
-               </div>
             </div>
-
-            
+        
     </section>
 
     <section id="forms" class="hidden">
@@ -372,7 +375,7 @@
             <div class="data4">
                 <form>
                     <label for="comments">Comments (Disabled)</label><br>
-                    <input id="comments" type="textbox" placeholder="Comments are disabled">
+                    <input id="comments" type="textbox" placeholder="Comments are disabled" disabled>
                 </form>
             </div>
         </div>
@@ -394,7 +397,7 @@
                 <form>
                     <label for="categoty">Categoty</label><br>
                     <select id="categoty" name="categoty">
-                        <option value="" disabled>Choose a category</option>
+                        <option value="" disabled selected hidden>Choose a category</option>
                         <option value="design">Design</option>
                         <option value="development">Development</option>
                         <option value="marketing">Marketing</option>
@@ -444,7 +447,213 @@
                 </form>
             </div>
         </div>
+        <div class="toggle">
+            <h2>Switch Toggle</h2>
+            <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>                
+            </label>
+                <span class="text">Enable notifications</span>
+            </div>
+            <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>                
+            </label>
+                <span class="text">Dark mode</span>
+            </div>
+            <div>
+            <label class="switch switch1">
+                <input type="checkbox" disabled>
+                <span class="slider"></span>
+            </label>
+                <span class="text">Disabled switch</span>
+            </div>
+        </div>
+        <div class="input-4">
+            <div class="data9">
+                <h2>Complete Form Example</h2>
+                <form>
+                    <label for="fname">Full Name</label><br>
+                    <input id="fname" type="text" placeholder="Enter your full name"><br>
+                    <label for="email">Email</label><br>
+                    <input id="email" type="email" placeholder="your@email.com"><br>
+                    <label for="country">Preferred Contact</label><br>
+                    <select for="contact" name="contect">
+                        <option value="" disabled selected hidden>How should we contact you?</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="sms">SMS</option>
+                    </select><br>
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I agree to receive marketing communications</label><br>
+                    <button class="button-z">Submit Form</button>    
+                    <button class="button-x">Cancel</button>
+                </form>
+            </div>
+        </div>
     </section>
+
+    <section id="layout" class="hidden">
+            <h2>Layout & Spacing</h2>
+        <div class="system">
+            <h2>Grid System</h2>
+            <h2>12-Column Grid</h2>
+            <div class="col-grid">
+                <div class="col-grid1">1</div>
+                <div class="col-grid1">2</div>
+                <div class="col-grid1">3</div>
+                <div class="col-grid1">4</div>
+                <div class="col-grid1">5</div>
+                <div class="col-grid1">6</div>
+                <div class="col-grid1">7</div>
+                <div class="col-grid1">8</div>
+                <div class="col-grid1">9</div>
+                <div class="col-grid1">10</div>
+                <div class="col-grid1">11</div>
+                <div class="col-grid1">12</div>
+            </div>
+            <h2>Responsive Layouts</h2>
+            <div class="layout3">
+                <div class="layout">
+                    <p>1 col mobile</p>
+                    <p>2 col tablet</p>
+                    <p>3 col desktop</p>
+                </div>
+                <div class="layout">
+                    <p>Responsive</p>
+                    <p>Grid Item</p>
+                </div>
+                <div class="layout">
+                    <p>Auto Layout</p>
+                    <p>Grid Item</p>        
+                </div>
+            </div>
+        </div>
+        <div class="spacing">
+            <h2>Spacing System</h2>
+            <h2>Spacing Scale</h2>
+            <div class="spacing-s">
+                <div class="space-0">
+                    <div>space-1</div>
+                    <div>0.25rem</div>
+                    <div>4px</div>
+                    <div class="bg-space1"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-2</div>
+                    <div>0.5rem</div>
+                    <div>8px</div>
+                    <div class="bg-space2"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-3</div>
+                    <div>0.75rem</div>
+                    <div>12px</div>
+                    <div class="bg-space3"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-4</div>
+                    <div>1rem</div>
+                    <div>16px</div>
+                    <div class="bg-space4"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-6</div>
+                    <div>1.5rem</div>
+                    <div>24px</div>
+                    <div class="bg-space6"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-8</div>
+                    <div>2rem</div>
+                    <div>32px</div>
+                    <div class="bg-space8"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-12</div>
+                    <div>3rem</div>
+                    <div>48px</div>
+                    <div class="bg-space12"></div>
+                </div>
+                <div class="space-0">
+                    <div>space-16</div>
+                    <div>4rem</div>
+                    <div>64px</div>
+                    <div  class="bg-space16"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contraner-sizes">
+            <h2>Container Sizes</h2>
+            <div>
+                <span class="word1">max-w-sm</span>
+                <span>384px - Small content</span>
+            </div>
+            <div>
+                <span class="word1">max-w-md</span>
+                <span>448px - Medium content</span>
+            </div>
+            <div>
+                <span class="word1">max-w-lg</span>
+                <span>512px - Large content</span>
+            </div>
+            <div>
+                <span class="word1">max-w-4xl</span>
+                <span>896px - Main content area</span>
+            </div>
+            <div>
+                <span class="word1">max-w-6xl</span>
+                <span>1152px - Wide layouts</span>
+            </div>
+        </div>
+        <div class="card-layouts">
+            <h2>Card Layouts</h2>
+            <div class="allbox-card">
+                <div class="box-card">
+                    <h2>Basic Card</h2>
+                    <p>A simple card with header and content sections.</p>
+                </div>
+                <div class="box-card">
+                    <h2>Card with Badge</h2>
+                    <span>New</span>
+                    <p>Card with additional badge element for status.</p>
+                </div>
+                <div class="box-card">
+                    <h2>Content Card</h2>
+                    <p class="box-card1">Card with multiple content elements and proper spacing.</p>
+                    <p>Additional information below separator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="guidelines">
+            <h2>Layout Guidelines</h2>
+            <div class="simi-guide">
+                <div>
+                    <h2>Principles</h2>
+                    <ul>
+                        <li>Use consistent spacing throughout the interface</li>
+                        <li>Follow the 8px grid system for better alignment</li>
+                        <li>Prioritize content hierarchy with spacing</li>
+                        <li>Ensure responsive behavior across devices</li>
+                        <li>Use appropriate container sizes for content</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Start with mobile-first responsive design</li>
+                        <li>Use flexbox and grid for modern layouts</li>
+                        <li>Maintain consistent margins and padding</li>
+                        <li>Group related content with appropriate spacing</li>
+                        <li>Test layouts on multiple screen sizes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <footer>
         <div class="info">
